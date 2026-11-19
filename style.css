@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111827;
+    color: #f3f4f6;
+    line-height: 1.6;
+}
+
+.randhan_container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADER & NAVIGASI */
+#randhan_header {
+    background-color: #090d16;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #f59e0b;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.randhan_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.randhan_logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.randhan_logo span {
+    color: #f59e0b;
+}
+
+.randhan_menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.randhan_menu a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.randhan_menu a:hover {
+    color: #f59e0b;
+}
+
+#randhan_menu_toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f59e0b;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* HERO / BERANDA */
+.randhan_hero {
+    background: linear-gradient(rgba(9, 13, 22, 0.85), rgba(9, 13, 22, 0.85)),
+                url('https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&w=1200&q=80') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.randhan_hero_content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.randhan_hero_content p {
+    font-size: 1.15rem;
+    color: #d1d5db;
+    margin-bottom: 30px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.randhan_hero_btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.randhan_btn {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #111827;
+    padding: 12px 26px;
+    border: 2px solid #f59e0b;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.randhan_btn:hover {
+    background-color: #d97706;
+    border-color: #d97706;
+    color: #fff;
+}
+
+.randhan_btn_outline {
+    background-color: transparent;
+    color: #f59e0b;
+}
+
+.randhan_btn_outline:hover {
+    background-color: #f59e0b;
+    color: #111827;
+}
+
+/* SECTION & GRID */
+.randhan_section {
+    padding: 70px 0;
+}
+
+.randhan_bg_dark {
+    background-color: #090d16;
+}
+
+.randhan_title {
+    text-align: center;
+    font-size: 2rem;
+    color: #f59e0b;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.randhan_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.randhan_grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.randhan_card {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border-top: 3px solid #f59e0b;
+}
+
+/* KARTU PAKET AUDIO DENGAN GAMBAR */
+.randhan_paket_card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.randhan_paket_img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 2px solid #374151;
+}
+
+.randhan_paket_body {
+    padding: 22px;
+}
+
+.randhan_featured {
+    border: 2px solid #f59e0b;
+    transform: translateY(-5px);
+}
+
+.randhan_card h3 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.randhan_price {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.randhan_list {
+    padding-left: 20px;
+    color: #d1d5db;
+}
+
+.randhan_list li {
+    margin-bottom: 8px;
+}
+
+/* GALERI */
+.randhan_galeri_item {
+    background: #1f2937;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    border-bottom: 3px solid #f59e0b;
+}
+
+.randhan_galeri_item img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.randhan_galeri_item p {
+    padding: 14px;
+    font-weight: 500;
+    color: #f3f4f6;
+}
+
+/* GAYA QR CODE WHATSAPP */
+.randhan_qr_card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.randhan_qr_box {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.randhan_qr_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.randhan_qr_text {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    margin-top: 8px;
+}
+
+/* FORM KONTAK */
+.randhan_form_group {
+    margin-bottom: 15px;
+}
+
+.randhan_form_group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #e5e7eb;
+}
+
+.randhan_form_group input,
+.randhan_form_group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #111827;
+    color: #fff;
+    border: 1px solid #374151;
+    border-radius: 5px;
+}
+
+.randhan_form_group input:focus,
+.randhan_form_group textarea:focus {
+    outline: none;
+    border-color: #f59e0b;
+}
+
+#randhan_status_pesan {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #34d399;
+}
+
+/* FOOTER */
+#randhan_footer {
+    background-color: #05080f;
+    color: #9ca3af;
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid #1f2937;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    #randhan_menu_toggle {
+        display: block;
+    }
+
+    #randhan_nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        background-color: #090d16;
+        padding: 15px 0;
+        border-bottom: 2px solid #f59e0b;
+    }
+
+    #randhan_nav.randhan_active {
+        display: block;
+    }
+
+    .randhan_menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .randhan_grid_2,
+    .randhan_grid_3 {
+        grid-template-columns: 1fr;
+    }
+
+    .randhan_featured {
+        transform: none;
+    }
+
+    .randhan_hero_content h1 {
+        font-size: 1.8rem;
+    }
+}
